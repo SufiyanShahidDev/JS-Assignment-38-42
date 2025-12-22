@@ -1,20 +1,36 @@
 
 // Answer1
 
-function power(base, exponent) {
-    var result = 1;
+// function power(base, exponent) {
+//     var result = 1;
 
-    for (var i = 1; i <= exponent; i++) {
-        result = result * base;
+//     for (var i = 1; i <= exponent; i++) {
+//         result = result * base;
+//     }
+
+//     return result;
+// }
+
+// var baseNumber = +prompt("Enter base number:");
+// var exponentNumber = +prompt("Enter exponent:");
+
+// var finalResult = power(baseNumber, exponentNumber);
+
+// alert("Result: " + finalResult);
+// console.log("Result:", finalResult);
+
+// Answer2
+
+function checkLeapYear() {
+    var year = +prompt("Enter a year:");
+
+    if (year % 4 === 0) {
+        alert(year + " is a Leap Year");
+        console.log(year + " is a Leap Year");
+    } else {
+        alert(year + " is NOT a Leap Year");
+        console.log(year + " is NOT a Leap Year");
     }
-
-    return result;
 }
 
-var baseNumber = +prompt("Enter base number:");
-var exponentNumber = +prompt("Enter exponent:");
-
-var finalResult = power(baseNumber, exponentNumber);
-
-alert("Result: " + finalResult);
-console.log("Result:", finalResult);
+checkLeapYear();
