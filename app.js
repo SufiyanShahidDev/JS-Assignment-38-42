@@ -21,16 +21,37 @@
 
 // Answer2
 
-function checkLeapYear() {
-    var year = +prompt("Enter a year:");
+// function checkLeapYear() {
+//     var year = +prompt("Enter a year:");
 
-    if (year % 4 === 0) {
-        alert(year + " is a Leap Year");
-        console.log(year + " is a Leap Year");
-    } else {
-        alert(year + " is NOT a Leap Year");
-        console.log(year + " is NOT a Leap Year");
-    }
+//     if (year % 4 === 0) {
+//         alert(year + " is a Leap Year");
+//         console.log(year + " is a Leap Year");
+//     } else {
+//         alert(year + " is NOT a Leap Year");
+//         console.log(year + " is NOT a Leap Year");
+//     }
+// }
+
+// checkLeapYear();
+
+// Answer3
+
+function calculateS(a, b, c) {
+    return (a + b + c) / 2;
 }
 
-checkLeapYear();
+function calculateArea() {
+    var a = +prompt("Enter side a:");
+    var b = +prompt("Enter side b:");
+    var c = +prompt("Enter side c:");
+
+    var S = calculateS(a, b, c);
+
+    var area = Math.sqrt(S * (S - a) * (S - b) * (S - c));
+
+    alert("Area of the triangle is: " + area);
+    console.log("Area of the triangle is: " + area);
+}
+
+calculateArea();
