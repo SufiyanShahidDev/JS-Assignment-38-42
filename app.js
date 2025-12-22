@@ -58,31 +58,34 @@
 
 // Answer5
 
-function calculateAverage(m1, m2, m3) {
-    return (m1 + m2 + m3) / 3;
-}
+// function calculateAverage(m1, m2, m3) {
+//     return (m1 + m2 + m3) / 3;
+// }
 
-function calculatePercentage(m1, m2, m3) {
-    var totalMarks = 300;
-    var obtainedMarks = m1 + m2 + m3;
-    return (obtainedMarks / totalMarks) * 100;
-}
+// function calculatePercentage(m1, m2, m3) {
+//     var totalMarks = 300;
+//     var obtainedMarks = m1 + m2 + m3;
+//     return (obtainedMarks / totalMarks) * 100;
+// }
 
-function mainFunction() {
-    var marks1 = +prompt("Enter marks of subject 1:");
-    var marks2 = +prompt("Enter marks of subject 2:");
-    var marks3 = +prompt("Enter marks of subject 3:");
+// function mainFunction() {
+//     var marks1 = +prompt("Enter marks of subject 1:");
+//     var marks2 = +prompt("Enter marks of subject 2:");
+//     var marks3 = +prompt("Enter marks of subject 3:");
 
-    var average = calculateAverage(marks1, marks2, marks3);
-    var percentage = calculatePercentage(marks1, marks2, marks3);
+//     var average = calculateAverage(marks1, marks2, marks3);
+//     var percentage = calculatePercentage(marks1, marks2, marks3);
 
-    alert(
-        "Average Marks: " + average +
-        "\nPercentage: " + percentage + "%"
-    );
+//     alert(
+//         "Average Marks: " + average +
+//         "\nPercentage: " + percentage + "%"
+//     );
 
-    console.log("Average Marks:", average);
-    console.log("Percentage:", percentage);
-}
+//     console.log("Average Marks:", average);
+//     console.log("Percentage:", percentage);
+// }
 
-mainFunction();
+// mainFunction();
+
+// Answer6
+
