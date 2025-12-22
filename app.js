@@ -37,21 +37,52 @@
 
 // Answer3
 
-function calculateS(a, b, c) {
-    return (a + b + c) / 2;
+// function calculateS(a, b, c) {
+//     return (a + b + c) / 2;
+// }
+
+// function calculateArea() {
+//     var a = +prompt("Enter side a:");
+//     var b = +prompt("Enter side b:");
+//     var c = +prompt("Enter side c:");
+
+//     var S = calculateS(a, b, c);
+
+//     var area = Math.sqrt(S * (S - a) * (S - b) * (S - c));
+
+//     alert("Area of the triangle is: " + area);
+//     console.log("Area of the triangle is: " + area);
+// }
+
+// calculateArea();
+
+// Answer5
+
+function calculateAverage(m1, m2, m3) {
+    return (m1 + m2 + m3) / 3;
 }
 
-function calculateArea() {
-    var a = +prompt("Enter side a:");
-    var b = +prompt("Enter side b:");
-    var c = +prompt("Enter side c:");
-
-    var S = calculateS(a, b, c);
-
-    var area = Math.sqrt(S * (S - a) * (S - b) * (S - c));
-
-    alert("Area of the triangle is: " + area);
-    console.log("Area of the triangle is: " + area);
+function calculatePercentage(m1, m2, m3) {
+    var totalMarks = 300;
+    var obtainedMarks = m1 + m2 + m3;
+    return (obtainedMarks / totalMarks) * 100;
 }
 
-calculateArea();
+function mainFunction() {
+    var marks1 = +prompt("Enter marks of subject 1:");
+    var marks2 = +prompt("Enter marks of subject 2:");
+    var marks3 = +prompt("Enter marks of subject 3:");
+
+    var average = calculateAverage(marks1, marks2, marks3);
+    var percentage = calculatePercentage(marks1, marks2, marks3);
+
+    alert(
+        "Average Marks: " + average +
+        "\nPercentage: " + percentage + "%"
+    );
+
+    console.log("Average Marks:", average);
+    console.log("Percentage:", percentage);
+}
+
+mainFunction();
