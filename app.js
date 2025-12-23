@@ -89,23 +89,51 @@
 
 // Answer5
 
-function customIndexOf(text, searchChar) {
-    var index = -1;
+// function customIndexOf(text, searchChar) {
+//     var index = -1;
 
-    for (var i = 0; i < text.length; i++) {
-        if (text[i] === searchChar) {
-            index = i;
-            break;
+//     for (var i = 0; i < text.length; i++) {
+//         if (text[i] === searchChar) {
+//             index = i;
+//             break;
+//         }
+//     }
+
+//     return index;
+// }
+
+// var userText = prompt("Enter a string:");
+// var userChar = prompt("Enter a single character:");
+
+// var result = customIndexOf(userText, userChar);
+
+// alert("Index is: " + result);
+// console.log("Index is:", result);
+
+// Answer6
+
+function removeVowels(sentence) {
+    var result = "";
+
+    for (var i = 0; i < sentence.length; i++) {
+        var char = sentence[i];
+
+        if (
+            char !== "a" && char !== "e" && char !== "i" &&
+            char !== "o" && char !== "u" &&
+            char !== "A" && char !== "E" && char !== "I" &&
+            char !== "O" && char !== "U"
+        ) {
+            result = result + char;
         }
     }
 
-    return index;
+    return result;
 }
 
-var userText = prompt("Enter a string:");
-var userChar = prompt("Enter a single character:");
+var userSentence = prompt("Enter a sentence (max 25 characters):");
 
-var result = customIndexOf(userText, userChar);
+var output = removeVowels(userSentence);
 
-alert("Index is: " + result);
-console.log("Index is:", result);
+alert("Sentence without vowels:\n" + output);
+console.log(output);
