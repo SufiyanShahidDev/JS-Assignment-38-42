@@ -56,7 +56,7 @@
 
 // calculateArea();
 
-// Answer5
+// Answer4
 
 // function calculateAverage(m1, m2, m3) {
 //     return (m1 + m2 + m3) / 3;
@@ -87,5 +87,25 @@
 
 // mainFunction();
 
-// Answer6
+// Answer5
 
+function customIndexOf(text, searchChar) {
+    var index = -1;
+
+    for (var i = 0; i < text.length; i++) {
+        if (text[i] === searchChar) {
+            index = i;
+            break;
+        }
+    }
+
+    return index;
+}
+
+var userText = prompt("Enter a string:");
+var userChar = prompt("Enter a single character:");
+
+var result = customIndexOf(userText, userChar);
+
+alert("Index is: " + result);
+console.log("Index is:", result);
