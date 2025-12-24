@@ -221,15 +221,40 @@
 
 // Answer9
 
-// Take working hours input
-var workingHours = +prompt("Enter total hours worked:");
-var overtimePay = 0;
-    
-// Check for overtime
-if (workingHours > 40) {
-    var overtimeHours = workingHours - 40;
-    overtimePay = overtimeHours * 12;
-    alert("Overtime Pay is Rs. " + overtimePay);
-} else {
-    alert("No overtime pay");
+// var workingHours = +prompt("Enter total hours worked:");
+// var overtimePay = 0;
+
+// if (workingHours > 40) {
+//     var overtimeHours = workingHours - 40;
+//     overtimePay = overtimeHours * 12;
+//     alert("Overtime Pay is Rs. " + overtimePay);
+// } else {
+//     alert("No overtime pay");
+// }
+
+// Answer10
+
+function calculateNotes() {
+    var amount = +prompt("Enter amount to withdraw:");
+
+    var hundredNotes = (amount - (amount % 100)) / 100;
+    amount = amount % 100;
+
+    var fiftyNotes = (amount - (amount % 50)) / 50;
+    amount = amount % 50;
+
+    var tenNotes = (amount - (amount % 10)) / 10;
+
+    alert(
+        "100 Rupee Notes: " + hundredNotes +
+        "\n50 Rupee Notes: " + fiftyNotes +
+        "\n10 Rupee Notes: " + tenNotes
+    );
+
+    console.log("100 Rupee Notes:", hundredNotes);
+    console.log("50 Rupee Notes:", fiftyNotes);
+    console.log("10 Rupee Notes:", tenNotes);
 }
+
+// Function call
+calculateNotes();
