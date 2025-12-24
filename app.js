@@ -192,29 +192,44 @@
 
 // Answer8
 
-var distanceKm = +prompt("Enter distance between two cities (in kilometers):");
+// var distanceKm = +prompt("Enter distance between two cities (in kilometers):");
 
-function convertToMeters(km) {
-    var meters = km * 1000;
-    alert("Distance in meters: " + meters);
+// function convertToMeters(km) {
+//     var meters = km * 1000;
+//     alert("Distance in meters: " + meters);
+// }
+
+// function convertToFeet(km) {    
+//     var feet = km * 3280.84;
+//     alert("Distance in feet: " + feet);
+// }
+
+// function convertToInches(km) {
+//     var inches = km * 39370.1;
+//     alert("Distance in inches: " + inches);
+// }
+
+// function convertToCentimeters(km) {
+//     var centimeters = km * 100000;
+//     alert("Distance in centimeters: " + centimeters);
+// }
+
+// convertToMeters(distanceKm);
+// convertToFeet(distanceKm);
+// convertToInches(distanceKm);
+// convertToCentimeters(distanceKm);
+
+// Answer9
+
+// Take working hours input
+var workingHours = +prompt("Enter total hours worked:");
+var overtimePay = 0;
+    
+// Check for overtime
+if (workingHours > 40) {
+    var overtimeHours = workingHours - 40;
+    overtimePay = overtimeHours * 12;
+    alert("Overtime Pay is Rs. " + overtimePay);
+} else {
+    alert("No overtime pay");
 }
-
-function convertToFeet(km) {    
-    var feet = km * 3280.84;
-    alert("Distance in feet: " + feet);
-}
-
-function convertToInches(km) {
-    var inches = km * 39370.1;
-    alert("Distance in inches: " + inches);
-}
-
-function convertToCentimeters(km) {
-    var centimeters = km * 100000;
-    alert("Distance in centimeters: " + centimeters);
-}
-
-convertToMeters(distanceKm);
-convertToFeet(distanceKm);
-convertToInches(distanceKm);
-convertToCentimeters(distanceKm);
